@@ -1,0 +1,10 @@
+#!/bin/python
+
+def main() -> None:
+    print("""- Computer Science Student <a href="https://www.cit.tum.de/cit/startseite/">@ Technical University of Munich (TUM)</a>""")
+    print("- Open-Source Contributor (since 2020)")
+    print("- A person that likes to experiment with different tech-stacks\n")
+
+
+if __name__ == "__main__":
+    main()

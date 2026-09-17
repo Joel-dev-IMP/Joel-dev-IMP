@@ -1,0 +1,10 @@
+#!/bin/python
+
+def main() -> None:
+    print("- Joined on January 12, 2021")
+    print("""- Pushed a private source code mirror of <a href="https://freefilesync.org/">FreeFileSync</a> with commits""")
+    print("  dating back to 2008 - making the public GitHub history quite confusing\n")
+
+
+if __name__ == "__main__":
+    main()
