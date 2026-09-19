@@ -29,11 +29,11 @@ VALUES
         'Learned this at TUM'
     ),
     ('C++', 'PROGRAMMING_LANGUAGES', '2025-06-18', ''),
-    ('Markdown', 'DOCUMENTS', '2026-09-17', ''),
+    ('Markdown', 'DOCUMENTS', '2026-09-19', ''),
     (
         'Typst',
         'DOCUMENTS',
-        '2026-09-16',
+        '2026-09-19',
         'Check out https://typst.app/'
     ),
     ('LaTeX', 'DOCUMENTS', '2026-07-13', ''),
@@ -50,10 +50,10 @@ VALUES
         'I hope the GIMP UX gets a little love'
     ),
     ('Docker', 'CONTAINERS', '2026-09-15', ''),
-    ('SQL', 'DATABASES', '2026-09-17', ''),
+    ('SQL', 'DATABASES', '2026-09-19', ''),
     ('Bash', 'COMMAND_LINES', '2026-09-16', ''),
-    ('Git', 'VERSION_CONTROL', '2026-09-17', ''),
-    ('Visual Studio Code', 'IDE', '2026-09-17', '');
+    ('Git', 'VERSION_CONTROL', '2026-09-19', ''),
+    ('Visual Studio Code', 'IDE', '2026-09-19', '');
 
 SELECT
     name,

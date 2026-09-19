@@ -1,7 +1,7 @@
 <pre>
 Welcome to Joel-dev-IMP.
 System Information:
-* <b>OS</b>: Fedora Linux 44 (GNU/Linux 7.2.4-200.fc44.x86_64)
+* <b>OS</b>: Fedora Linux 44 (GNU/Linux 7.2.5-200.fc44.x86_64)
 * <b>WM</b>: Hyprland 0.56.2
 
 This profile belongs to Joel.
@@ -52,11 +52,11 @@ memory D INSERT INTO
                  'Learned this at TUM'
              ),
              ('C++', 'PROGRAMMING_LANGUAGES', '2025-06-18', ''),
-             ('Markdown', 'DOCUMENTS', '2026-09-17', ''),
+             ('Markdown', 'DOCUMENTS', '2026-09-19', ''),
              (
                  'Typst',
                  'DOCUMENTS',
-                 '2026-09-16',
+                 '2026-09-19',
                  'Check out https://typst.app/'
              ),
              ('LaTeX', 'DOCUMENTS', '2026-07-13', ''),
@@ -73,10 +73,10 @@ memory D INSERT INTO
                  'I hope the GIMP UX gets a little love'
              ),
              ('Docker', 'CONTAINERS', '2026-09-15', ''),
-             ('SQL', 'DATABASES', '2026-09-17', ''),
+             ('SQL', 'DATABASES', '2026-09-19', ''),
              ('Bash', 'COMMAND_LINES', '2026-09-16', ''),
-             ('Git', 'VERSION_CONTROL', '2026-09-17', ''),
-             ('Visual Studio Code', 'IDE', '2026-09-17', '');
+             ('Git', 'VERSION_CONTROL', '2026-09-19', ''),
+             ('Visual Studio Code', 'IDE', '2026-09-19', '');
 
 memory D SELECT
              name,
@@ -92,29 +92,29 @@ memory D SELECT
 ├────────────────────┼─────────────────────┤
 │ Git                │                   0 │
 │ Markdown           │                   0 │
-│ Python             │                   0 │
 │ SQL                │                   0 │
+│ Typst              │                   0 │
 │ Visual Studio Code │                   0 │
-│ Bash               │                   1 │
-│ HTML               │                   1 │
-│ Javascript         │                   1 │
-│ Typst              │                   1 │
-│ Docker             │                   2 │
-│ GIMP               │                   2 │
-│ CSS                │                   5 │
-│ Next.js            │                   5 │
-│ Tailwind           │                   5 │
-│ Typescript         │                   5 │
-│ Figma              │                   7 │
-│ LaTeX              │                  66 │
-│ C                  │                 243 │
-│ Java               │                 273 │
-│ OCaml              │                 400 │
-│ C++                │                 456 │
+│ Python             │                   2 │
+│ Bash               │                   3 │
+│ HTML               │                   3 │
+│ Javascript         │                   3 │
+│ Docker             │                   4 │
+│ GIMP               │                   4 │
+│ CSS                │                   7 │
+│ Next.js            │                   7 │
+│ Tailwind           │                   7 │
+│ Typescript         │                   7 │
+│ Figma              │                   9 │
+│ LaTeX              │                  68 │
+│ C                  │                 245 │
+│ Java               │                 275 │
+│ OCaml              │                 402 │
+│ C++                │                 458 │
 └────────────────────┴─────────────────────┘
   21 rows                        2 columns
 memory D .exit
 Joel-dev-IMP@github:~$ <b>date +%Y-%m-%d</b>
-2026-09-17
+2026-09-19
 Joel-dev-IMP@github:~$ <b>exit</b>
 </pre>
