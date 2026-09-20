@@ -11,7 +11,7 @@ VALUES
     (
         'Python',
         'PROGRAMMING_LANGUAGES',
-        '2026-09-17',
+        '2026-09-20',
         'First programming language'
     ),
     (
@@ -41,7 +41,7 @@ VALUES
     ('CSS', 'WEB_DEVELOPMENT', '2026-09-12', ''),
     ('Typescript', 'WEB_DEVELOPMENT', '2026-09-12', ''),
     ('Tailwind', 'WEB_DEVELOPMENT', '2026-09-12', ''),
-    ('Next.js', 'WEB_DEVELOPMENT', '2026-09-12', ''),
+    ('Next.js', 'WEB_DEVELOPMENT', '2026-09-20', ''),
     ('Figma', 'DESIGN_TOOLS', '2026-09-10', ''),
     (
         'GIMP',
@@ -49,11 +49,11 @@ VALUES
         '2026-09-15',
         'I hope the GIMP UX gets a little love'
     ),
-    ('Docker', 'CONTAINERS', '2026-09-15', ''),
-    ('SQL', 'DATABASES', '2026-09-19', ''),
+    ('Docker', 'CONTAINERS', '2026-09-20', ''),
+    ('SQL', 'DATABASES', '2026-09-20', ''),
     ('Bash', 'COMMAND_LINES', '2026-09-16', ''),
-    ('Git', 'VERSION_CONTROL', '2026-09-19', ''),
-    ('Visual Studio Code', 'IDE', '2026-09-19', '');
+    ('Git', 'VERSION_CONTROL', '2026-09-20', ''),
+    ('Visual Studio Code', 'IDE', '2026-09-20', '');
 
 SELECT
     name,
