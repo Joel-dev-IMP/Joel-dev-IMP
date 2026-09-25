@@ -1,7 +1,7 @@
 <pre>
 Welcome to Joel-dev-IMP.
 System Information:
-* <b>OS</b>: Fedora Linux 44 (GNU/Linux 7.2.5-200.fc44.x86_64)
+* <b>OS</b>: Fedora Linux 44 (GNU/Linux 7.2.6-200.fc44.x86_64)
 * <b>WM</b>: Hyprland 0.56.2
 
 This profile belongs to Joel.
@@ -29,54 +29,15 @@ memory D CREATE TABLE tools_and_skills (
          );
 
 memory D INSERT INTO
-             tools_and_skills (name, category, last_used, comment)
-         VALUES
-             (
-                 'Python',
-                 'PROGRAMMING_LANGUAGES',
-                 '2026-09-20',
-                 'First programming language'
-             ),
-             (
-                 'Javascript',
-                 'PROGRAMMING_LANGUAGES',
-                 '2026-09-16',
-                 ''
-             ),
-             ('C', 'PROGRAMMING_LANGUAGES', '2026-01-17', ''),
-             ('Java', 'PROGRAMMING_LANGUAGES', '2025-12-18', ''),
-             (
-                 'OCaml',
-                 'PROGRAMMING_LANGUAGES',
-                 '2025-08-13',
-                 'Learned this at TUM'
-             ),
-             ('C++', 'PROGRAMMING_LANGUAGES', '2025-06-18', ''),
-             ('Markdown', 'DOCUMENTS', '2026-09-19', ''),
-             (
-                 'Typst',
-                 'DOCUMENTS',
-                 '2026-09-19',
-                 'Check out https://typst.app/'
-             ),
-             ('LaTeX', 'DOCUMENTS', '2026-07-13', ''),
-             ('HTML', 'WEB_DEVELOPMENT', '2026-09-16', ''),
-             ('CSS', 'WEB_DEVELOPMENT', '2026-09-12', ''),
-             ('Typescript', 'WEB_DEVELOPMENT', '2026-09-12', ''),
-             ('Tailwind', 'WEB_DEVELOPMENT', '2026-09-12', ''),
-             ('Next.js', 'WEB_DEVELOPMENT', '2026-09-20', ''),
-             ('Figma', 'DESIGN_TOOLS', '2026-09-10', ''),
-             (
-                 'GIMP',
-                 'GRAPHICS_EDITORS',
-                 '2026-09-15',
-                 'I hope the GIMP UX gets a little love'
-             ),
-             ('Docker', 'CONTAINERS', '2026-09-20', ''),
-             ('SQL', 'DATABASES', '2026-09-20', ''),
-             ('Bash', 'COMMAND_LINES', '2026-09-16', ''),
-             ('Git', 'VERSION_CONTROL', '2026-09-20', ''),
-             ('Visual Studio Code', 'IDE', '2026-09-20', '');
+             tools_and_skills (name, category, last_used, comment) (
+                 SELECT
+                     name,
+                     category,
+                     last_used,
+                     comment
+                 FROM
+                     'tools_and_skills.csv'
+             );
 
 memory D SELECT
              name,
@@ -90,31 +51,32 @@ memory D SELECT
 │        name        │ days_since_last_use │
 │      varchar       │        int64        │
 ├────────────────────┼─────────────────────┤
+│ Bash               │                   0 │
 │ Docker             │                   0 │
 │ Git                │                   0 │
+│ Javascript         │                   0 │
 │ Next.js            │                   0 │
 │ Python             │                   0 │
 │ SQL                │                   0 │
+│ Typescript         │                   0 │
 │ Visual Studio Code │                   0 │
-│ Markdown           │                   1 │
 │ Typst              │                   1 │
-│ Bash               │                   4 │
-│ HTML               │                   4 │
-│ Javascript         │                   4 │
-│ GIMP               │                   5 │
-│ CSS                │                   8 │
-│ Tailwind           │                   8 │
-│ Typescript         │                   8 │
-│ Figma              │                  10 │
-│ LaTeX              │                  69 │
-│ C                  │                 246 │
-│ Java               │                 276 │
-│ OCaml              │                 403 │
-│ C++                │                 459 │
+│ IntelliJ Idea      │                   2 │
+│ Java               │                   2 │
+│ Markdown           │                   6 │
+│ HTML               │                   9 │
+│ GIMP               │                  10 │
+│ CSS                │                  13 │
+│ Tailwind           │                  13 │
+│ Figma              │                  15 │
+│ LaTeX              │                  74 │
+│ C                  │                 251 │
+│ OCaml              │                 408 │
+│ C++                │                 464 │
 └────────────────────┴─────────────────────┘
-  21 rows                        2 columns
+  22 rows                        2 columns
 memory D .exit
 Joel-dev-IMP@github:~$ <b>date +%Y-%m-%d</b>
-2026-09-20
+2026-09-25
 Joel-dev-IMP@github:~$ <b>exit</b>
 </pre>
