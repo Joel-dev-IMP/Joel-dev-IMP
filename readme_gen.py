@@ -10,16 +10,18 @@ def get_system_information() -> str:
     """Get the information on the current system using fastfetch and format it in a nice way"""
     info = subprocess.check_output("fastfetch").decode(encoding="utf-8")
 
-    os_info = re.search("OS: [^(]+", info)
-    kernel_info = re.search("Kernel: [^(\n]+", info)
-    wm_info = re.search("WM: [^(]+", info)
+    os_info = re.search("OS: ([^(]+)", info)
+    kernel_info = re.search("Kernel: ([^(\n]+)", info)
+    wm_info = re.search("Window Manager: ([^(]+)", info)
 
     if os_info is None or kernel_info is None or wm_info is None:
         raise
 
-    system_information = os_info.group().strip().replace("OS:", "* <b>OS</b>:")
-    system_information += f" (GNU/{kernel_info.group().replace("Kernel:", "").strip()})\n"
-    system_information += wm_info.group().strip().replace("WM:", "* <b>WM</b>:")
+    system_information = "* <b>OS</b>: "
+    system_information += os_info.group(1).strip()
+    system_information += f" (GNU/{kernel_info.group(1).strip()})\n"
+    system_information += "* <b>WM</b>: "
+    system_information += wm_info.group(1).strip()
 
     return system_information
 
