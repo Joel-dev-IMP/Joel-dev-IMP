@@ -31,10 +31,16 @@ def shell_command(command: str) -> str:
     return f"Joel-dev-IMP@github:~$ <b>{command.removeprefix("./")}</b>"
 
 
-def run_command(command: str, shell: bool = False) -> str:
+def run_command(command: str, shell: bool = False, split: bool = True) -> str:
     """Runs a command and formats the output to look like it was hand-typed in a shell"""
+    preprocessed_command = [command]
+
+    if split:
+        preprocessed_command = command.split(" ")
+
     output = subprocess.check_output(
-        command.split(" "), shell=shell).decode(encoding="utf-8")
+        preprocessed_command, shell=shell).decode(encoding="utf-8")
+
     return f"{shell_command(command)}\n{output.removesuffix("\n")}"
 
 
@@ -86,7 +92,7 @@ To get started, you can try the following commands:
 {run_command("./whoami")}
 {run_command("./profile-facts")}
 {execute_duckdb_queries()}
-{run_command("date +%Y-%m-%d")}
+{run_command("date '+%Y-%m-%d %H:00'", split=False, shell=True)}
 {run_command("exit", shell=True).strip()}
 </pre>"""
 
