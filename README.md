@@ -25,15 +25,17 @@ memory D CREATE TABLE tools_and_skills (
              name VARCHAR PRIMARY KEY,
              category VARCHAR NOT NULL,
              last_used DATE NOT NULL,
+             update_count INTEGER NOT NULL, -- How often this has this tool/skill been updated in this repo?
              comment VARCHAR
          );
 
 memory D INSERT INTO
-             tools_and_skills (name, category, last_used, comment) (
+             tools_and_skills (name, category, last_used, update_count, comment) (
                  SELECT
                      name,
                      category,
                      last_used,
+                     update_count,
                      comment
                  FROM
                      'tools_and_skills.csv'
@@ -51,13 +53,13 @@ memory D SELECT
 │        name        │ days_since_last_use │
 │      varchar       │        int64        │
 ├────────────────────┼─────────────────────┤
-│ Git                │                   1 │
-│ Visual Studio Code │                   1 │
+│ Git                │                   0 │
+│ Python             │                   0 │
+│ SQL                │                   0 │
+│ Visual Studio Code │                   0 │
 │ Javascript         │                   4 │
-│ Python             │                   4 │
 │ Typst              │                   4 │
 │ LaTeX              │                   6 │
-│ SQL                │                   8 │
 │ Bash               │                  11 │
 │ GIMP               │                  13 │
 │ Docker             │                  18 │
@@ -77,6 +79,6 @@ memory D SELECT
   22 rows                        2 columns
 memory D .exit
 Joel-dev-IMP@github:~$ <b>date '+%Y-%m-%d %H:00'</b>
-2026-10-13 08:00
+2026-10-13 09:00
 Joel-dev-IMP@github:~$ <b>exit</b>
 </pre>
