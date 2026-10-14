@@ -53,6 +53,7 @@ memory D SELECT
 │        name        │ days_since_last_use │
 │      varchar       │        int64        │
 ├────────────────────┼─────────────────────┤
+│ C++                │                   0 │
 │ Visual Studio Code │                   0 │
 │ C                  │                   1 │
 │ Git                │                   1 │
@@ -74,11 +75,10 @@ memory D SELECT
 │ Tailwind           │                  32 │
 │ Figma              │                  34 │
 │ OCaml              │                 427 │
-│ C++                │                 483 │
 └────────────────────┴─────────────────────┘
   22 rows                        2 columns
 memory D .exit
 Joel-dev-IMP@github:~$ <b>date '+%Y-%m-%d %H:00'</b>
-2026-10-14 11:00
+2026-10-14 21:00
 Joel-dev-IMP@github:~$ <b>exit</b>
 </pre>
