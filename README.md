@@ -1,7 +1,7 @@
 <pre>
 Welcome to Joel-dev-IMP.
 System Information:
-* <b>OS</b>: Fedora Linux 44 (GNU/Linux 7.2.9-201.fc44.x86_64)
+* <b>OS</b>: Fedora Linux 44 (GNU/Linux 7.2.10-200.fc44.x86_64)
 * <b>WM</b>: Hyprland 0.56.2
 
 This profile belongs to Joel.
@@ -54,31 +54,31 @@ memory D SELECT
 │      varchar       │        int64        │
 ├────────────────────┼─────────────────────┤
 │ C++                │                   0 │
+│ Javascript         │                   0 │
+│ Next.js            │                   0 │
+│ Typescript         │                   0 │
 │ Visual Studio Code │                   0 │
-│ C                  │                   1 │
 │ Git                │                   1 │
-│ Python             │                   1 │
-│ SQL                │                   1 │
-│ Typst              │                   1 │
-│ Javascript         │                   5 │
-│ LaTeX              │                   7 │
-│ Bash               │                  12 │
-│ GIMP               │                  14 │
-│ Docker             │                  19 │
-│ Next.js            │                  19 │
-│ Typescript         │                  19 │
-│ Java               │                  20 │
-│ IntelliJ Idea      │                  21 │
-│ Markdown           │                  25 │
-│ HTML               │                  28 │
-│ CSS                │                  32 │
-│ Tailwind           │                  32 │
-│ Figma              │                  34 │
-│ OCaml              │                 427 │
+│ C                  │                   2 │
+│ Python             │                   2 │
+│ SQL                │                   2 │
+│ Typst              │                   2 │
+│ LaTeX              │                   8 │
+│ Bash               │                  13 │
+│ GIMP               │                  15 │
+│ Docker             │                  20 │
+│ Java               │                  21 │
+│ IntelliJ Idea      │                  22 │
+│ Markdown           │                  26 │
+│ HTML               │                  29 │
+│ CSS                │                  33 │
+│ Tailwind           │                  33 │
+│ Figma              │                  35 │
+│ OCaml              │                 428 │
 └────────────────────┴─────────────────────┘
   22 rows                        2 columns
 memory D .exit
 Joel-dev-IMP@github:~$ <b>date '+%Y-%m-%d %H:00'</b>
-2026-10-14 21:00
+2026-10-15 17:00
 Joel-dev-IMP@github:~$ <b>exit</b>
 </pre>
