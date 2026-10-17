@@ -33,12 +33,22 @@ ORDER BY
 """)
 
     print(db.sql("""SELECT * FROM tools_and_skills;"""))
-    while (id := input("Which tool do you want to update? (Enter a digit or Q to quit) ").lower()) != "q":
-        if not re.match("^\\d+$", id):
-            print("Invalid number!")
+    while (id := input("Which tool(s) do you want to update? (Enter one or more comma separated digits or Q to quit) ").lower()) != "q":
+        if not re.match("^\\s*\\d+\\s*(,\\s*\\d+\\s*)*$", id):
+            print("Invalid number(s)!")
             continue
 
-        last_used = input("When was the tool last used? (Defaults to now()) ")
+        ids = [int(i.strip()) for i in id.split(",")]
+
+        tool_names = db.sql("""SELECT name FROM tools_and_skills WHERE id IN ?;""",
+                            params=(ids,)).fetchall()
+        last_tool = tool_names[-1][0]
+
+        if len(tool_names) > 1:
+            last_tool = " and " + last_tool
+
+        last_used = input(
+            f"When was your last use of {", ".join(n[0] for n in tool_names[:-1])}{last_tool}? (Defaults to now()) ")
 
         if not last_used:
             last_used = "now()"
@@ -51,14 +61,14 @@ SET
     last_used = ({last_used})::date,
     update_count = update_count + 1
 WHERE
-    id = ?
-    AND last_used < ({last_used})::date;""", (id,))
+    id IN ?
+    AND last_used < ({last_used})::date;""", (ids,))
         print(db.sql("""SELECT
     *
 FROM
     tools_and_skills
 WHERE
-    id = ?;""", params=(id,)))
+    id IN ?;""", params=(ids,)))
 
     db.sql("""SELECT
     name,
