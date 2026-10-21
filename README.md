@@ -53,32 +53,32 @@ memory D SELECT
 │        name        │ days_since_last_use │
 │      varchar       │        int64        │
 ├────────────────────┼─────────────────────┤
+│ Bash               │                   1 │
 │ C++                │                   1 │
 │ Git                │                   1 │
+│ Markdown           │                   1 │
+│ SQL                │                   1 │
 │ Visual Studio Code │                   1 │
-│ Markdown           │                   2 │
-│ Python             │                   3 │
-│ SQL                │                   3 │
-│ Bash               │                   4 │
-│ Javascript         │                   5 │
-│ Next.js            │                   5 │
-│ Typescript         │                   5 │
-│ C                  │                   7 │
-│ Typst              │                   7 │
-│ LaTeX              │                  13 │
-│ GIMP               │                  20 │
-│ Docker             │                  25 │
-│ Java               │                  26 │
-│ IntelliJ Idea      │                  27 │
-│ HTML               │                  34 │
-│ CSS                │                  38 │
-│ Tailwind           │                  38 │
-│ Figma              │                  40 │
-│ OCaml              │                 433 │
+│ Python             │                   4 │
+│ Javascript         │                   6 │
+│ Next.js            │                   6 │
+│ Typescript         │                   6 │
+│ C                  │                   8 │
+│ Typst              │                   8 │
+│ LaTeX              │                  14 │
+│ GIMP               │                  21 │
+│ Docker             │                  26 │
+│ Java               │                  27 │
+│ IntelliJ Idea      │                  28 │
+│ HTML               │                  35 │
+│ CSS                │                  39 │
+│ Tailwind           │                  39 │
+│ Figma              │                  41 │
+│ OCaml              │                 434 │
 └────────────────────┴─────────────────────┘
   22 rows                        2 columns
 memory D .exit
 Joel-dev-IMP@github:~$ <b>date '+%Y-%m-%d %H:00'</b>
-2026-10-20 13:00
+2026-10-21 12:00
 Joel-dev-IMP@github:~$ <b>exit</b>
 </pre>
