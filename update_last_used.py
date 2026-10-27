@@ -2,10 +2,35 @@
 import duckdb
 
 import re
+import readline
+from pathlib import Path
 
 
 def main() -> None:
     db = duckdb.connect(":memory:")
+    HIST_FILE = Path.home() / ".update_last_used_history"
+
+    if HIST_FILE.exists():
+        deduplicated_history: list[str] = []
+        full_history: list[str] = []
+        with HIST_FILE.open("r") as f:
+            full_history = f.readlines()
+
+        for item in reversed(full_history):
+            if item not in deduplicated_history:
+                deduplicated_history.append(item)
+
+        with HIST_FILE.open("w") as f:
+            f.writelines(reversed(deduplicated_history))
+
+    try:
+        readline.read_history_file(HIST_FILE)
+        initial_history_length = readline.get_current_history_length()
+    except FileNotFoundError:
+        HIST_FILE.open("w+").close()
+        initial_history_length = 0
+
+    readline.set_auto_history(True)
 
     db.sql("""CREATE TABLE tools_and_skills (
     id INTEGER NOT NULL,
@@ -80,6 +105,11 @@ FROM
     tools_and_skills
 ORDER BY
     id;""").to_csv("tools_and_skills.csv")
+
+    new_history_length = readline.get_current_history_length()
+    readline.set_history_length(100)
+    readline.append_history_file(
+        new_history_length - initial_history_length, HIST_FILE)
 
 
 if __name__ == "__main__":
