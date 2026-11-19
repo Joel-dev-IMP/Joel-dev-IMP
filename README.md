@@ -53,14 +53,14 @@ memory D SELECT
 │        name        │ days_since_last_use │
 │      varchar       │        int64        │
 ├────────────────────┼─────────────────────┤
-│ Git                │                   2 │
-│ Python             │                   2 │
+│ Bash               │                   1 │
+│ Git                │                   1 │
+│ Python             │                   1 │
+│ SQL                │                   1 │
+│ Visual Studio Code │                   1 │
 │ Typst              │                   2 │
-│ Visual Studio Code │                   2 │
 │ C++                │                   3 │
-│ Bash               │                   4 │
 │ Github Actions     │                   4 │
-│ SQL                │                   6 │
 │ Docker             │                   7 │
 │ Typescript         │                   7 │
 │ CSS                │                  13 │
@@ -80,6 +80,6 @@ memory D SELECT
   23 rows                        2 columns
 memory D .exit
 Joel-dev-IMP@github:~$ <b>date '+%Y-%m-%d %H:00'</b>
-2026-11-19 10:00
+2026-11-19 11:00
 Joel-dev-IMP@github:~$ <b>exit</b>
 </pre>
