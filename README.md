@@ -53,33 +53,33 @@ memory D SELECT
 │        name        │ days_since_last_use │
 │      varchar       │        int64        │
 ├────────────────────┼─────────────────────┤
-│ Git                │                   2 │
-│ Python             │                   2 │
-│ Visual Studio Code │                   2 │
-│ Markdown           │                   3 │
-│ SQL                │                   3 │
-│ Bash               │                   4 │
+│ Bash               │                   1 │
+│ CSS                │                   1 │
+│ Docker             │                   1 │
+│ Git                │                   1 │
+│ Github Actions     │                   1 │
+│ HTML               │                   1 │
+│ Javascript         │                   1 │
+│ Markdown           │                   1 │
+│ Next.js            │                   1 │
+│ Python             │                   1 │
+│ SQL                │                   1 │
+│ Tailwind           │                   1 │
+│ Typescript         │                   1 │
+│ Visual Studio Code │                   1 │
 │ Typst              │                   6 │
 │ C++                │                   7 │
-│ Github Actions     │                   8 │
-│ Docker             │                  11 │
-│ Typescript         │                  11 │
-│ CSS                │                  17 │
-│ Javascript         │                  17 │
-│ Next.js            │                  17 │
-│ Tailwind           │                  17 │
 │ Figma              │                  20 │
 │ C                  │                  41 │
 │ LaTeX              │                  47 │
 │ GIMP               │                  54 │
 │ Java               │                  60 │
 │ IntelliJ Idea      │                  61 │
-│ HTML               │                  68 │
 │ OCaml              │                 467 │
 └────────────────────┴─────────────────────┘
   23 rows                        2 columns
 memory D .exit
 Joel-dev-IMP@github:~$ <b>date '+%Y-%m-%d %H:00'</b>
-2026-11-23 08:00
+2026-11-23 09:00
 Joel-dev-IMP@github:~$ <b>exit</b>
 </pre>
