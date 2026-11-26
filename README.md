@@ -1,7 +1,7 @@
 <pre>
 Welcome to Joel-dev-IMP.
 System Information:
-* <b>OS</b>: Fedora Linux 44 (GNU/Linux 7.3.4-200.fc44.x86_64)
+* <b>OS</b>: Fedora Linux 44 (GNU/Linux 7.3.5-200.fc44.x86_64)
 * <b>WM</b>: KWin
 
 This profile belongs to Joel.
@@ -53,22 +53,22 @@ memory D SELECT
 │        name        │ days_since_last_use │
 │      varchar       │        int64        │
 ├────────────────────┼─────────────────────┤
-│ Git                │                   1 │
+│ C++                │                   0 │
+│ CSS                │                   0 │
+│ Git                │                   0 │
+│ Javascript         │                   0 │
+│ Markdown           │                   0 │
+│ Tailwind           │                   0 │
+│ Typescript         │                   0 │
+│ Visual Studio Code │                   0 │
 │ Python             │                   1 │
-│ Visual Studio Code │                   1 │
 │ Typst              │                   2 │
-│ Typescript         │                   3 │
 │ Bash               │                   4 │
-│ CSS                │                   4 │
 │ Docker             │                   4 │
 │ Github Actions     │                   4 │
 │ HTML               │                   4 │
-│ Javascript         │                   4 │
-│ Markdown           │                   4 │
 │ Next.js            │                   4 │
 │ SQL                │                   4 │
-│ Tailwind           │                   4 │
-│ C++                │                  10 │
 │ Figma              │                  23 │
 │ C                  │                  44 │
 │ LaTeX              │                  50 │
@@ -80,6 +80,6 @@ memory D SELECT
   23 rows                        2 columns
 memory D .exit
 Joel-dev-IMP@github:~$ <b>date '+%Y-%m-%d %H:00'</b>
-2026-11-26 18:00
+2026-11-26 19:00
 Joel-dev-IMP@github:~$ <b>exit</b>
 </pre>
